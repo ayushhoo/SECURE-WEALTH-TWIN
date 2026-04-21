@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home — Product</title>
+  <style>
+    :root{--bg:#f7f9fc;--card:#ffffff;--accent:#0b67ff;--muted:#6b7280;--radius:8px}
+    *{box-sizing:border-box}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--bg);color:#0f1724}
+    header{background:var(--card);border-bottom:1px solid #e6eef8;padding:18px 24px;position:sticky;top:0;z-index:10}
+    .container{max-width:1100px;margin:28px auto;padding:0 20px}
+    .brand{font-weight:700;color:var(--accent);font-size:1.125rem}
+    nav ul{list-style:none;margin:0;padding:0;display:flex;gap:12px;align-items:center}
+    nav a{color:#0f1724;text-decoration:none;padding:8px 10px;border-radius:6px}
+    nav a:focus,nav a:hover{background:#eef6ff}
+    .hero{background:linear-gradient(180deg,rgba(11,103,255,0.05),transparent);padding:40px;border-radius:var(--radius);display:flex;gap:24px;align-items:center}
+    .hero h1{margin:0;font-size:1.9rem}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:20px}
+    .card{background:var(--card);padding:16px;border-radius:var(--radius);box-shadow:0 1px 2px rgba(13,27,40,0.04)}
+    footer{margin:48px 0 24px;text-align:center;color:var(--muted)}
+    .nav-right{margin-left:auto}
+    @media (max-width:640px){.hero{flex-direction:column;align-items:flex-start}}
+  </style>
+</head>
+<body>
+  <header role="banner">
+    <div class="container" style="display:flex;align-items:center;gap:16px">
+      <div class="brand">Product</div>
+      <nav role="navigation" aria-label="Main navigation" class="nav-right" style="display:flex;flex:1">
+        <ul style="width:100%;display:flex;gap:8px;align-items:center">
+          <li><a href="home.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="security-engine.html">Security Engine</a></li>
+          <li><a href="demo-dashboard.html">Demo Dashboard</a></li>
+          <li><a href="tech-stack.html">Tech Stack</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <section class="hero" aria-labelledby="home-heading">
+      <div>
+        <h1 id="home-heading">Welcome to Product</h1>
+        <p style="margin-top:8px;color:var(--muted)">Central hub for Home, About, Features, How It Works, Security Engine, Demo Dashboard, Tech Stack, Team, and Contact pages. Use the navigation to explore each section as a standalone page.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="overview" style="margin-top:20px">
+      <h2 id="overview">Overview</h2>
+      <div class="grid" role="list">
+        <article class="card" role="listitem">
+          <h3>About</h3>
+          <p style="color:var(--muted);margin-top:6px">Learn who we are and our mission.</p>
+        </article>
+        <article class="card" role="listitem">
+          <h3>Features</h3>
+          <p style="color:var(--muted);margin-top:6px">Discover product capabilities and benefits.</p>
+        </article>
+        <article class="card" role="listitem">
+          <h3>Demo Dashboard</h3>
+          <p style="color:var(--muted);margin-top:6px">Interactive preview of the dashboard experience.</p>
+        </article>
+      </div>
+    </section>
+
+    <section style="margin-top:20px" aria-labelledby="cta">
+      <h2 id="cta">Get Started</h2>
+      <p style="color:var(--muted)">Navigate to any page from the top menu. Each page is a standalone template with consistent styling and accessible structure.</p>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <p style="margin:0;color:var(--muted)">© Product — All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

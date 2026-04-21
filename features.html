@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Features — Product</title>
+  <style>
+    :root{--bg:#f7f9fc;--card:#ffffff;--accent:#0b67ff;--muted:#6b7280;--radius:8px}
+    body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--bg);color:#0f1724}
+    header{background:var(--card);border-bottom:1px solid #e6eef8;padding:18px}
+    .container{max-width:1000px;margin:28px auto;padding:0 20px}
+    .feature-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+    .feature{background:var(--card);padding:16px;border-radius:var(--radius);box-shadow:0 1px 2px rgba(13,27,40,0.04)}
+    nav a{margin-right:10px;text-decoration:none;color:inherit}
+    footer{margin:48px 0 24px;text-align:center;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex;align-items:center">
+      <div class="brand" style="font-weight:700;color:var(--accent)">Product</div>
+      <nav role="navigation" aria-label="Main navigation" style="margin-left:auto">
+        <a href="home.html">Home</a>
+        <a href="features.html" aria-current="page">Features</a>
+        <a href="demo-dashboard.html">Demo Dashboard</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <h1>Features</h1>
+    <p style="color:var(--muted)">This page lists the core features of the product, including capabilities and benefits that users can expect.</p>
+
+    <section class="feature-list" aria-label="Features list" style="margin-top:16px">
+      <div class="feature">
+        <h3>Feature One</h3>
+        <p style="color:var(--muted)">Short description of Feature One.</p>
+      </div>
+      <div class="feature">
+        <h3>Feature Two</h3>
+        <p style="color:var(--muted)">Short description of Feature Two.</p>
+      </div>
+      <div class="feature">
+        <h3>Feature Three</h3>
+        <p style="color:var(--muted)">Short description of Feature Three.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <p style="margin:0;color:var(--muted)">© Product — Features</p>
+    </div>
+  </footer>
+</body>
+</html>

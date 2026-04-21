@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>How It Works — Product</title>
+  <style>
+    :root{--bg:#f7f9fc;--card:#ffffff;--accent:#0b67ff;--muted:#6b7280;--radius:8px}
+    body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--bg);color:#0f1724}
+    header{background:var(--card);padding:18px;border-bottom:1px solid #e6eef8}
+    .container{max-width:900px;margin:28px auto;padding:0 20px}
+    .steps{display:flex;flex-direction:column;gap:12px}
+    .step{background:var(--card);padding:14px;border-radius:var(--radius);box-shadow:0 1px 2px rgba(13,27,40,0.04)}
+    footer{margin:48px 0 24px;text-align:center;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex;align-items:center">
+      <div class="brand" style="font-weight:700;color:var(--accent)">Product</div>
+      <nav role="navigation" aria-label="Main navigation" style="margin-left:auto">
+        <a href="home.html">Home</a>
+        <a href="how-it-works.html" aria-current="page">How It Works</a>
+        <a href="security-engine.html">Security Engine</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <h1>How It Works</h1>
+    <p style="color:var(--muted)">Step-by-step explanation of the product flow and interactions.</p>
+
+    <section class="steps" aria-label="Process steps" style="margin-top:12px">
+      <div class="step" aria-labelledby="step1">
+        <h2 id="step1">1. Discovery</h2>
+        <p style="color:var(--muted)">Identify requirements and gather inputs.</p>
+      </div>
+      <div class="step" aria-labelledby="step2">
+        <h2 id="step2">2. Integration</h2>
+        <p style="color:var(--muted)">Connect systems and configure workflows.</p>
+      </div>
+      <div class="step" aria-labelledby="step3">
+        <h2 id="step3">3. Operation</h2>
+        <p style="color:var(--muted)">Run the product and monitor outcomes.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <p style="margin:0;color:var(--muted)">© Product — How It Works</p>
+    </div>
+  </footer>
+</body>
+</html>

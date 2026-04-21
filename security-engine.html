@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Security Engine — Product</title>
+  <style>
+    :root{--bg:#f7f9fc;--card:#ffffff;--accent:#0b67ff;--muted:#6b7280;--radius:8px}
+    body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--bg);color:#0f1724}
+    header{background:var(--card);padding:18px;border-bottom:1px solid #e6eef8}
+    .container{max-width:1000px;margin:28px auto;padding:0 20px}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:16px}
+    .card{background:var(--card);padding:16px;border-radius:var(--radius);box-shadow:0 1px 2px rgba(13,27,40,0.04)}
+    .list{color:var(--muted)}
+    footer{margin:48px 0 24px;text-align:center;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex;align-items:center">
+      <div class="brand" style="font-weight:700;color:var(--accent)">Product</div>
+      <nav role="navigation" aria-label="Main navigation" style="margin-left:auto">
+        <a href="home.html">Home</a>
+        <a href="security-engine.html" aria-current="page">Security Engine</a>
+        <a href="tech-stack.html">Tech Stack</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <h1>Security Engine</h1>
+    <p style="color:var(--muted)">Details about the Security Engine component, covering detection, prevention, and compliance aspects.</p>
+
+    <div class="grid" style="margin-top:12px">
+      <div class="card">
+        <h2>Capabilities</h2>
+        <ul class="list">
+          <li>Real-time threat detection</li>
+          <li>Automated response orchestration</li>
+          <li>Audit logging and compliance reporting</li>
+        </ul>
+
+        <h2 style="margin-top:12px">Integration</h2>
+        <p style="color:var(--muted)">Integrates with existing data sources and systems to provide end-to-end protection.</p>
+      </div>
+
+      <aside class="card" aria-labelledby="engine-summary">
+        <h3 id="engine-summary">Engine Summary</h3>
+        <p style="color:var(--muted)">High-level metrics and configuration options for the security engine are presented here.</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <p style="margin:0;color:var(--muted)">© Product — Security Engine</p>
+    </div>
+  </footer>
+</body>
+</html>

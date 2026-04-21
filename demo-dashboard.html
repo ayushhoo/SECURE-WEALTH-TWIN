@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Demo Dashboard — Product</title>
+  <style>
+    :root{--bg:#f7f9fc;--card:#ffffff;--accent:#0b67ff;--muted:#6b7280;--radius:8px}
+    body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--bg);color:#0f1724}
+    header{background:var(--card);padding:18px;border-bottom:1px solid #e6eef8}
+    .container{max-width:1100px;margin:28px auto;padding:0 20px}
+    .dashboard{display:grid;grid-template-columns:2fr 1fr;gap:12px}
+    .panel{background:var(--card);padding:14px;border-radius:var(--radius);box-shadow:0 1px 2px rgba(13,27,40,0.04)}
+    .kpi{display:flex;gap:12px;flex-wrap:wrap}
+    .kpi .item{flex:1 1 140px;padding:12px;border-radius:6px;background:#f1f7ff}
+    footer{margin:48px 0 24px;text-align:center;color:var(--muted)}
+    @media (max-width:800px){.dashboard{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex;align-items:center">
+      <div class="brand" style="font-weight:700;color:var(--accent)">Product</div>
+      <nav role="navigation" aria-label="Main navigation" style="margin-left:auto">
+        <a href="home.html">Home</a>
+        <a href="demo-dashboard.html" aria-current="page">Demo Dashboard</a>
+        <a href="features.html">Features</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <h1>Demo Dashboard</h1>
+    <p style="color:var(--muted)">Interactive dashboard template showing KPIs, charts, and a sidebar for actions and filters.</p>
+
+    <section class="dashboard" aria-label="Demo dashboard">
+      <div>
+        <div class="panel" aria-labelledby="kpi-heading">
+          <h2 id="kpi-heading">Key Performance Indicators</h2>
+          <div class="kpi" style="margin-top:8px">
+            <div class="item"><strong>Users</strong><div style="color:var(--muted)">1,234</div></div>
+            <div class="item"><strong>Active</strong><div style="color:var(--muted)">98%</div></div>
+            <div class="item"><strong>Alerts</strong><div style="color:var(--muted)">12</div></div>
+          </div>
+        </div>
+
+        <div class="panel" style="margin-top:12px" aria-labelledby="chart-heading">
+          <h2 id="chart-heading">Traffic Overview</h2>
+          <div style="height:200px;background:linear-gradient(90deg,#eef6ff,transparent);border-radius:6px;margin-top:8px;display:flex;align-items:center;justify-content:center;color:var(--muted)">Chart placeholder</div>
+        </div>
+      </div>
+
+      <aside class="panel" aria-labelledby="sidebar-heading">
+        <h3 id="sidebar-heading">Filters & Actions</h3>
+        <p style="color:var(--muted)">Controls for demo filtering and quick actions.</p>
+        <button style="margin-top:12px;background:var(--accent);color:#fff;border:none;padding:8px 10px;border-radius:6px;cursor:pointer">Run Demo Action</button>
+      </aside>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <p style="margin:0;color:var(--muted)">© Product — Demo Dashboard</p>
+    </div>
+  </footer>
+</body>
+</html>
